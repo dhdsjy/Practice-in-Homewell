@@ -4,6 +4,8 @@
 
 2017.10.30 理解了函数型数据，明白了子空间聚类的原理，算法实际细节过程还需要好好看
 
+函数型数据的聚类方法也逐渐成熟[15-19]，主要分为三类：降维之后使用传统方法聚类（如K-均值、系统聚类等）；采用特殊距离或曲线差异的非参数方法；基于模型的聚类方法。
+
 2017.10.31
 
 ### Functional Clustering
@@ -32,6 +34,10 @@ Step2：使用层级聚类方法将子聚类一步一步合并为更大的聚类
 
 [两步聚类法 改进的BIRCH算法](http://www.cnblogs.com/tiaozistudy/p/twostep_cluster_algorithm.html)
 
+[函数型数据分析（中文论文，不详细）](http://www.stats.gov.cn/tjzs/tjsj/tjcb/dysj/201705/t20170522_1496324.html)
+
+[函数型数据聚类直观理解](https://wenku.baidu.com/view/1097ca5c43323968011c92cb.html)
+
 ### subspace Clustering
 
 [子空间算法（PCA）](http://blog.csdn.net/u014230646/article/details/51615808)
@@ -47,6 +53,12 @@ Step2：使用层级聚类方法将子聚类一步一步合并为更大的聚类
 #### sparse subspace clustering
 
 #### spectral clustering
+
+##### DTW 
+
+
+
+[dtw c实现](http://blog.csdn.net/kingskyleader/article/details/6244011)
 
 
 
