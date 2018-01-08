@@ -1,0 +1,47 @@
+Functions
+=========
+* Implement function composition
+  - affine transformation
+- implement interface for Regularized Mirror Descent-type methods that require
+  minimizing a regularizer, a prox-function, and a linear term
+- implement negative entropy regularizer (\sum_{i} p_i log p_i)
+- implement L2 norm, L_inf norm
+
+Optimizers
+==========
+- implement Exponentiated Gradient Descent via Mirror Descent
+- implement steepest descent method
+- Implement primal-dual interior point solver
+- implement primal-dual subgradient descent (or maybe Augmented Lagrangian method?)
+- implement Conditional Gradient Descent (aka Frank-Wolfe)
+
+Testing
+=======
+- implement an example that uses general constraints
+- implement an example that uses a ton of function composition.
+
+Constraints
+===========
+- Add better support inequality constraints. There's gotta be something better
+  than a log barrier function.
+- add support for finding an initial solution
+
+Stopping Criteria
+=================
+- Implement some method to check convergence using duality gap
+
+Learning Rates
+==============
+
+General
+=======
+- added symbolic problem definitions
+- implement the following interface
+
+  minimize(<expr>)
+    .subject_to(<expr>)
+    .subject_to(<expr>)
+    .using(<algorithm>)
+
+  where <algorithm> is initialized with all algorithm-specific parameters
+- implement Lagrangian from problem definition
